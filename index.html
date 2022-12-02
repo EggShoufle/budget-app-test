@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="site-wrapper">
+        <div class="header__container">
+          <p class="header__title">Wallet</p>
+        </div>
+        <div class="body__container">
+          <div class="body__balance-container">
+            <p class="body__balance-title">Total Balance</p>
+            <div class="body__balance-body">
+              <p class="body__balance-currency">Rp</p>
+              <p class="body__balance" id="balance"></p>
+            </div>
+          </div>
+          <div>
+            <div class="body__button-container" id="modalAdd">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQ5JREFUSEvdlf0RATEQxX9XATqgAypABZRAB1RCB+iADqiADtABFTDPZGcycU7cx5i5/JfM5r3dt2+ThIpXUjE+9SLYA/2SJBPWUFi+RI+SwA3mhZ1FcAeakaRpyX0l2ACTSIItMApiMwkEPgNu7lIbWABdtz8Bc+Di9qp0DQyAhjv7SBBaV+DHFLlE3vNIrACTK5rAyj94kilbOW4HjANpfiZQpiq742Wrqs5ur3N/5SZoBT0RwRUQWSECk0jDM3VIK9fQUiRShnKNucOy1ZzIVeak6CYrUE2UDX2bLgObysa+TWVjNdyG87+DpiqUvRobs3I9FTHAWTFvEpX5XGso9WzU7Ecrqnnq/co//SdAr0IZfcJCNAAAAABJRU5ErkJggg=="
+                class="body__button-add"
+              />
+              <p class="body__button-text">Add</p>
+            </div>
+            <div class="body__tabs">
+              <button class="body__tabs-btn-expense">Expense</button>
+              <button class="body__tabs-btn-income">Income</button>
+            </div>
+            <div class="body__transaction-container"></div>
+          </div>
+        </div>
+
+        <div class="body__modal-container" style="display: none;">
+          <div class="body__modal-body">
+            <img
+              class="body__btn-close"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtlN0NgkAQhD86sBMsQTuQSrUDLUE7sQQziSQn7h8mF1/gDbLMtzs7dwOdn6GzPhsgdfjvFp2AG/B0Wt0BB+DijRJNIPEzcAeOBkTiV2APTB4kAkhA3Y8GpBV/vKcwp8x2YEHkxtx5KK7CDKCaJUTfZEsqXgUsIXovia8FzLboP2/xX2GqWtR6LhFr8WZSM4CVFgl56Vo1QRTFKMIfkMpB8xbaQn46aOqk61WR3pSVgmzJFY2wZgOkFna36AUMCDQZmJpqFgAAAABJRU5ErkJggg=="
+            />
+            <div class="body__modal-choose-transaction">
+              <button id="addExpense">Expense</button>
+              <button id="addIncome">Income</button>
+            </div>
+            <div class="body__modal-input-container">
+              <div class="body__modal-input-form">
+                <label for="">Transaction</label>
+                <input
+                  type="text"
+                  id="transName"
+                  placeholder="Enter Transaction"
+                />
+              </div>
+              <div class="body__modal-input-form">
+                <label for="">Amount</label>
+                <input
+                  type="number"
+                  name=""
+                  id="amount"
+                  placeholder="Enter Amount"
+                />
+              </div>
+            </div>
+            <button class="body__btn-submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

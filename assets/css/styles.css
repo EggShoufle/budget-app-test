@@ -1,0 +1,209 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__container {
+  padding-top: 25px;
+}
+.header__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.body__container {
+  background-color: #FFFFFF;
+  border-radius: 25px 25px 0 0;
+  height: 100vh;
+  margin-top: 25px;
+  padding: 25px 10px 0 10px;
+}
+.body__balance {
+  font-size: 32px;
+  line-height: 29px;
+  font-weight: 800;
+  color: #4D4D4D;
+  text-align: center;
+}
+.body__balance-currency {
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #4D4D4D;
+  margin-right: 7px;
+  text-align: center;
+}
+.body__balance-container {
+  display: grid;
+  justify-items: center;
+}
+.body__balance-title {
+  margin-bottom: 15px;
+}
+.body__balance-body {
+  display: flex;
+}
+.body__button-container {
+  display: grid;
+  justify-items: center;
+  margin-top: 20px;
+}
+.body__button-text {
+  margin-top: 5px;
+}
+.body__button-add {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 7px;
+  width: 28px;
+}
+.body__tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+.body__tabs button {
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 15px;
+}
+.body__tabs button:hover {
+  background-color: #2d9ffd;
+  color: #FFFFFF;
+}
+.body__tabs button:active {
+  background-color: #0e7fdc;
+  color: #FFFFFF;
+}
+.body__tabs button:first-of-type {
+  margin-right: 10px;
+}
+.body__tabs-btn-active {
+  background-color: #088EFA;
+  color: #FFFFFF;
+}
+.body__btn-submit {
+  padding: 10px;
+  margin-top: 50px;
+  width: 100%;
+}
+.body__btn-close {
+  position: absolute;
+  width: 35px;
+  right: 15px;
+}
+.body__modal-choose-transaction {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.body__modal-choose-transaction button {
+  width: 100%;
+}
+.body__modal-input-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.body__modal-input-form label {
+  line-height: 23px;
+  width: 148px;
+}
+.body__modal-input-form input {
+  padding: 8px;
+  border: 1px solid;
+  width: 100%;
+}
+.body__modal-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 46, 46, 0.3);
+  position: fixed;
+  top: 0;
+}
+.body__modal-body {
+  width: 327px;
+  height: 388px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 15px;
+  transform: translate(-50%, -50%);
+}
+.body__transaction-container {
+  margin-top: 20px;
+}
+.body__transaction-list {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 3px solid;
+  margin-bottom: 10px;
+}
+
+.site-wrapper {
+  background: linear-gradient(0deg, rgb(8, 103, 236) 17%, rgb(8, 142, 250) 57%, rgb(88, 180, 255) 100%);
+  width: 100vw;
+  height: 100vh;
+}/*# sourceMappingURL=styles.css.map */

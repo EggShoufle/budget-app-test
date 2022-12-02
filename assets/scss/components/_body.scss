@@ -1,0 +1,141 @@
+.body {
+  &__container {
+    background-color: $color-white;
+    border-radius: 25px 25px 0 0;
+    height: 100vh;
+    margin-top: 25px;
+    padding: 25px 10px 0 10px;
+  }
+  &__balance {
+    @include font(32px, 29px, 800);
+    text-align: center;
+    &-currency {
+      @include font(17px, 22px, 500);
+      margin-right: 7px;
+      text-align: center;
+    }
+    &-container {
+      display: grid;
+      justify-items: center;
+    }
+    &-title {
+      margin-bottom: 15px;
+    }
+    &-body {
+      display: flex;
+    }
+  }
+  &__button {
+    &-container {
+      display: grid;
+      justify-items: center;
+      margin-top: 20px;
+    }
+    &-text {
+      margin-top: 5px;
+    }
+    &-add {
+      border: 1px solid;
+      border-radius: 25px;
+      padding: 7px;
+      width: 28px;
+    }
+  }
+  &__tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    background-color: $color-white-bone;
+    border-radius: 15px;
+    button {
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 15px;
+      &:hover {
+        background-color: $color-blue-hover;
+        color: $color-white;
+      }
+      &:active {
+        background-color: $color-blue-active;
+        color: $color-white;
+      }
+      &:first-of-type {
+        margin-right: 10px;
+      }
+    }
+    &-btn-active {
+      background-color: $color-blue;
+      color: $color-white;
+    }
+  }
+  &__btn{
+    &-submit{
+      padding: 10px;
+      margin-top: 50px;
+      width: 100%;
+    }
+    &-close{
+      position: absolute;
+      width: 35px;
+      right: 15px;
+    }
+  }
+  &__modal {
+    &-choose-transaction{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+      margin-top: 60px;
+      button{
+        width: 100%;
+      }
+    }
+    &-input{
+      &-form{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        label{
+          line-height: 23px;
+          width: 148px;
+        }
+        input{
+          padding: 8px;
+          border: 1px solid;
+          width: 100%;
+        }
+      }
+    }    
+    &-container {
+      width: 100%;
+      height: 100%;
+      background-color: rgb(46, 46, 46, 0.3);
+      position: fixed;      
+      top: 0;
+    }
+    &-body {
+        width: 327px;
+        height: 388px;
+        background-color: $color-white;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        padding: 15px;
+        // padding-top: 77px;
+        transform: translate(-50%, -50%);
+    }
+  }
+  &__transaction {
+    &-container {
+      margin-top: 20px;
+    }
+    &-list {
+      padding: 5px 10px;
+      display: flex;
+      justify-content: space-between;
+      border-left: 3px solid;
+      margin-bottom: 10px;
+    }
+  }
+}

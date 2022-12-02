@@ -1,0 +1,9 @@
+.header {
+  &__container {
+    padding-top: 25px;
+  }
+  &__title {
+    text-align: center;
+    @include font(22px, 25px, 800, $color-white);
+  }
+}
